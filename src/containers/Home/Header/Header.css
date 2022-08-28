@@ -3,9 +3,14 @@
   padding: 0;
   margin: 0;
   list-style: none;
+  box-sizing: border-box;
 }
 
-.contianer {
+body {
+  font-family: "Roboto";
+}
+
+.container {
   width: 1245px;
   margin: auto;
 }
@@ -14,8 +19,48 @@ header {
   background: #141414;
   padding-bottom: 137px;
 }
-header nav {
+header .hero {
+  width: 715px;
+  margin: auto;
+  margin-top: 126px;
+}
+header .hero .title {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 56px;
+  line-height: 125%;
+  text-align: center;
+  color: #FFFFFF;
+}
+header .hero .title_text {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 150%;
+  text-align: center;
+  text-transform: uppercase;
+  color: #F4F4F4;
+  font-size: 18px;
+  margin: 21px 0 48px;
+}
+header .hero .buttons {
+  display: flex;
+  gap: 35px;
+  justify-content: center;
+}
+header .hero .buttons button {
+  width: 173px;
+  height: 50px;
+  border: none;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
+  text-transform: uppercase;
+}
+header .hero .buttons .btn_about_course {
+  color: #FCFCFC;
+  background: #1E1E1E;
+}
+header .hero .buttons .btn_signin {
+  background: #242424;
 }/*# sourceMappingURL=Header.css.map */

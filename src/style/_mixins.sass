@@ -1,8 +1,39 @@
+@import "./_colors"
+
 @mixin textNav()
-    font-family: 'Roboto'
     font-style: normal
     font-weight: 500
     font-size: 16px
     line-height: 150%
     text-align: center
     text-transform: uppercase
+    color: $colorTextNav
+@mixin title()
+    font-style: normal
+    font-weight: 700
+    font-size: 56px
+    line-height: 125%
+    text-align: center
+    color: $colorTitle
+
+@mixin btn()
+    width: 173px
+    height: 50px
+    border: none
+    display: flex
+    align-items: center
+    justify-content: center
+    text-transform: uppercase
+
+@mixin heading2()
+    font-style: normal
+    font-weight: 700
+    font-size: 40px
+    line-height: 130%
+    color: $btnWhite-bg
+@mixin blackText()
+    font-style: normal
+    font-weight: 400
+    font-size: 16px
+    line-height: 150%
+    color: $btnWhite-bg

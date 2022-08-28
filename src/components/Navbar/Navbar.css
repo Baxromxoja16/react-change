@@ -1,1 +1,65 @@
-/*# sourceMappingURL=Navbar.css.map */
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto";
+}
+
+.container {
+  width: 1245px;
+  margin: auto;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 21px 0;
+}
+nav .number {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 150%;
+  text-align: center;
+  text-transform: uppercase;
+  color: #F4F4F4;
+  text-decoration: none;
+}
+nav .menu {
+  display: flex;
+  align-items: center;
+  gap: 55px;
+}
+nav .menu .menu_item a {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 150%;
+  text-align: center;
+  text-transform: uppercase;
+  color: #F4F4F4;
+  text-decoration: none;
+}
+nav .right_menu {
+  display: flex;
+  gap: 41px;
+}
+nav .right_menu a {
+  display: block;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 150%;
+  text-align: center;
+  text-transform: uppercase;
+  color: #F4F4F4;
+}
+nav .right_menu .language {
+  text-decoration: none;
+}/*# sourceMappingURL=Navbar.css.map */

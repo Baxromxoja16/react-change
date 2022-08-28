@@ -1,0 +1,33 @@
+@import "../../../style/_global"
+
+.info_section
+    margin-top: 50px
+    padding-bottom: 58px
+
+    .main_info
+        display: flex
+        align-items: center
+        gap: 54px
+
+        .info_left
+            position: relative
+            span
+                position: absolute
+                right: -19px
+                bottom: -49px
+                font-style: normal
+                font-weight: 900
+                font-size: 105.429px
+                line-height: 130%
+                color: $colorTitle
+        .info_right
+            .info_title
+                @include heading2()
+                margin-bottom: 42px
+            .info_text
+                @include blackText()
+                margin-bottom: 35px
+            .btn_course
+                @include btn()
+                background: $btnWhite-bg
+                color: $colorTitle

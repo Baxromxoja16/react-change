@@ -3,5 +3,28 @@
 header
     background: $header-bg
     padding-bottom: 137px
-    
-            
+
+    .hero
+        width: 715px
+        margin: auto
+        margin-top: 126px
+
+        .title
+            @include title()
+
+        .title_text
+            @include textNav()
+            font-size: 18px
+            margin: 21px 0 48px
+        .buttons
+            display: flex
+            gap: 35px
+            justify-content: center
+
+            button
+                @include btn()
+            .btn_about_course
+                color: $colorBtn
+                background: $btnAbout-bg
+            .btn_signin
+                background: $btnWhite-bg

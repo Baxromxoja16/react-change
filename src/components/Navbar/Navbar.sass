@@ -1,9 +1,32 @@
-@import "global"
+@import "../../style/_global"
+@import "../../style/_mixins"
+@import "../../style/_colors"
 
 nav
     display: flex
     align-items: center
     justify-content: space-between
+    padding: 21px 0
 
     .number
         @include textNav()
+        text-decoration: none
+
+    .menu
+        display: flex
+        align-items: center
+        gap: 55px
+
+        .menu_item
+            a
+                @include textNav()
+                text-decoration: none
+
+    .right_menu
+        display: flex
+        gap: 41px
+        a
+            display: block
+            @include textNav()
+        .language
+            text-decoration: none
