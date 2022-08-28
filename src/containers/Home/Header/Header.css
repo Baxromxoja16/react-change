@@ -1,0 +1,21 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.contianer {
+  width: 1245px;
+  margin: auto;
+}
+
+header {
+  background: #141414;
+  padding-bottom: 137px;
+}
+header nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}/*# sourceMappingURL=Header.css.map */
