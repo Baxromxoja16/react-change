@@ -1,0 +1,49 @@
+@import '../../../style/_global'
+
+.news
+    margin-bottom: 50px
+    h2
+        @include heading2()
+        margin: auto
+        margin-bottom: 50px
+    .news_carts
+        display: flex
+        flex-wrap: wrap
+        gap: 30px
+
+        .news_card_small h4,.news_card_big h4
+            @include textNav()
+            text-transform: none
+            text-align: left
+
+        .news_card_small .news_date,.news_card_big .news_date
+            @include textNav()
+            text-align: left
+            color: $colorOpasityWhite
+            font-weight: 400
+            text-transform: none
+
+        .news_card_small,.news_card_big
+            display: flex
+            justify-content: flex-end
+            flex-direction: column
+            padding-left: 15px
+            padding-bottom: 24px
+            gap: 8px
+
+        .news_card_big
+            width: 675px
+            height: 360px
+            background: url("../../../images/new_big.png")
+            background-repeat: no-repeat
+            background-size: cover
+
+        .news_card_small
+            width: 323px
+            height: 360px
+            background: url("../../../images/news_small.png")
+            background-repeat: no-repeat
+            background-size: cover
+
+            &:last-child
+                background: url("../../../images/new_smal.png")

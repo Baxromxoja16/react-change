@@ -6,6 +6,7 @@ import CoursFor from "./CoursFor/CoursFor";
 import Header from "./Header/Header";
 import "./Home.sass";
 import InfoSection from "./InfoSection/InfoSection";
+import News from "./News/News";
 import Practice from "./Practice/Practice";
 import Texnology from "./Texnology/Texnology";
 
@@ -20,6 +21,7 @@ const Home = () => {
       <Practice />
       <Consultation />
       <Comments />
+      <News />
     </>
   );
 };
