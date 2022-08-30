@@ -1,0 +1,61 @@
+@import "../../../style/_global"
+.CoursFor
+    background-image: url("../../../images/kurs.jpg")
+    background-repeat: no-repeat
+    background-size: cover
+    padding: 86px 0 85px
+    position: relative
+    margin-top: 70px
+
+    .course_left_info
+        width: 492px
+
+        h2
+            @include heading2()
+            color: $colorTitle
+            margin-bottom: 40px
+
+        .course_info
+            margin-bottom: 40px
+            &:last-child
+                margin-bottom: 0
+            h4
+                @include blackText()
+                font-size: 18px
+                color: $colorTitle
+                font-weight: 700
+                margin-bottom: 14px
+
+            .course_info_text
+                @include blackText()
+                color: $colorTitle
+
+    .course_right_date
+        position: absolute
+        right: 0
+        background: rgba(255, 255, 255, 0.2)
+        width: 42%
+        height: 100%
+        display: flex
+        align-items: center
+        justify-content: center
+        flex-direction: column
+        gap: 30px
+
+        h3
+            font-style: normal
+            font-weight: 500
+            font-size: 65px
+            line-height: 130%
+            color: $colorTitle
+
+            &::after
+                content: ""
+                display: block
+                margin-top: 30px
+                width: 100%
+                height: 1px
+                background: rgba(255, 255, 255, 0.36)
+        .right_date
+            @include blackText()
+            color: $colorTitle

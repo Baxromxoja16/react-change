@@ -1,0 +1,42 @@
+@import "../../../style/_global"
+
+.consultation
+    background: $btnWhite-bg
+    padding: 60px 0 73px
+    .consilt_form
+        display: flex
+        align-items: center
+        flex-wrap: wrap
+        .form_title
+            width: 419px
+            margin-right: 10px
+
+            h3
+                @include title()
+                font-weight: 500
+                font-size: 24px
+                display: flex
+                align-items: center
+                gap: 10px
+                margin-bottom: 13px
+
+            .form_text
+                @include blackText()
+                color: $colorTitle
+        .inputs
+            width: 323px
+            height: 50px
+            border: 1px solid #FDFDFD
+            background: transparent
+            padding: 13px 17px
+            @include blackText()
+            color: $colorTitle
+            margin-right: 30px
+            &::placeholder
+                color: $colorTitle
+
+        .form_send
+            @include btn()
+            width: 205px
+            font-size: 16px
+            text-transform: capitalize
