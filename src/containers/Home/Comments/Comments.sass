@@ -1,0 +1,47 @@
+@import '../../../style/_global'
+
+.slick-dots
+    display: none !important
+.comments
+    margin: 50px 0 50px
+    .slider_item
+        position: relative
+        h2
+            @include heading2()
+            text-align: center
+            margin-bottom: 50px
+        .slider_block
+            width: 940px
+            margin: auto
+            display: flex
+            .left_img
+                width: 338px
+                height: 350px
+
+            .slider_right_info
+                padding: 48px 32px 48px 30px
+                .slider_info_text
+                    @include blackText()
+                    margin: 30px 0
+                h3
+                    @include blackText()
+                    margin-bottom: 5px
+                    font-weight: 700
+                h4
+                    @include blackText()
+                    color: $colorSlider
+        .slick-arrow,.slick-arrow
+            position: absolute
+            height: 100%
+            background: linear-gradient(0deg, rgba(36, 36, 36, 0.85), rgba(36, 36, 36, 0.85))
+            width: 160px
+            height: 100%
+            z-index: 2
+            &::before
+                display: none
+
+        button>.slick-prev
+                left: 0
+
+        button>.slick-next
+                right: 0

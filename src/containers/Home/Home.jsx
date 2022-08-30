@@ -1,5 +1,6 @@
 import React from "react";
 import Along from "./Along/Along";
+import Comments from "./Comments/Comments";
 import Consultation from "./Consultation/Consultation";
 import CoursFor from "./CoursFor/CoursFor";
 import Header from "./Header/Header";
@@ -18,6 +19,7 @@ const Home = () => {
       <CoursFor />
       <Practice />
       <Consultation />
+      <Comments />
     </>
   );
 };
