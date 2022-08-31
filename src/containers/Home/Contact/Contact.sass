@@ -1,0 +1,55 @@
+@import "../../../style/_global"
+
+.contacts
+    padding-top: 70px
+    .contact_left_info
+        width: 41.8%
+        padding: 70px 107px 85px 39px
+        background: $btnWhite-bg
+        color: $colorTitle
+        display: flex
+        flex-direction: column
+        gap: 30px
+
+        h2
+            @include heading2()
+            color: $colorTitle
+
+        .contact_info_text,.contact_info_number
+            @include textNav()
+            text-align: left
+            text-transform: none
+            font-weight: 400
+        .contact_info_number
+            display: flex
+            align-items: center
+            text-decoration: none
+            gap: 10px
+
+    .contact_right_form
+        width: 58.2%
+        padding: 70px 147px 80px 133px
+        background: $contact-bg
+        display: flex
+        flex-direction: column
+        align-items: center
+        gap: 30px
+
+        h2
+            @include heading2()
+
+        .contact_form_text
+            @include blackText()
+            color: $colorSlider
+
+        input
+            @include form_input()
+            &:focus
+                outline: none
+
+        .btn_send
+            @include btn()
+            text-transform: none
+            width: 100%
+            background: $btnWhite-bg
+            color: $colorTitle

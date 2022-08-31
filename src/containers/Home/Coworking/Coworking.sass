@@ -1,0 +1,58 @@
+@import '../../../style/_global'
+
+.coworking
+    margin-top: 50px
+
+    .row
+        align-items: center
+
+        .coworking_left
+            background: url('../../../images/coworking.jpg')
+            background-repeat: no-repeat
+            background-size: cover
+            padding: 172px 39px
+            width: 793px
+
+            h3
+                @include heading2()
+                color: $colorTitle
+                font-size: 24px
+                margin-bottom: 15px
+                padding-top: 29px
+                position: relative
+                &::before
+                    content: ""
+                    display: block
+                    width: 323px
+                    height: 1px
+                    background: $colorTitle
+                    position: absolute
+                    top: 0
+
+            .coworking_left_text
+                @include textWhite()
+                max-width: 535px
+                margin-bottom: 20px
+
+            .coworking_left_date
+                @include textWhite()
+                display: flex
+                align-items: center
+                gap: 10px
+
+        .coworking_right
+            width: 580px
+            padding: 110px 0 0 30px
+
+            h3
+                @include heading2()
+                font-size: 24px
+                margin-bottom: 35px
+            .coworking_right_item
+                display: flex
+                flex-direction: column
+                gap: 35px
+                li
+                    display: flex
+                    gap: 10px
+                    @include blackText()

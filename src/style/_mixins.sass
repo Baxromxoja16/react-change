@@ -8,6 +8,13 @@
     text-align: center
     text-transform: uppercase
     color: $colorTextNav
+@mixin textWhite()
+    font-style: normal
+    font-weight: 400
+    font-size: 16px
+    line-height: 150%
+    color: $colorTextNav
+
 @mixin title()
     font-style: normal
     font-weight: 700
@@ -31,9 +38,23 @@
     font-size: 40px
     line-height: 130%
     color: $btnWhite-bg
+
 @mixin blackText()
     font-style: normal
     font-weight: 400
     font-size: 16px
     line-height: 150%
     color: $btnWhite-bg
+
+@mixin form_input()
+    border: 1px solid $inputBorderColor
+    width: 100%
+    padding: 13px 17px
+    font-style: normal
+    font-weight: 400
+    font-size: 16px
+    line-height: 150%
+    color: $colorPlaceholder
+
+    &::placeholder
+        color: $colorPlaceholder

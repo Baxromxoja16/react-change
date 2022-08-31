@@ -2,7 +2,10 @@ import React from "react";
 import Along from "./Along/Along";
 import Comments from "./Comments/Comments";
 import Consultation from "./Consultation/Consultation";
+import Contact from "./Contact/Contact";
 import CoursFor from "./CoursFor/CoursFor";
+import Coworking from "./Coworking/Coworking";
+import Footer from "./Footer/Footer";
 import Header from "./Header/Header";
 import "./Home.sass";
 import InfoSection from "./InfoSection/InfoSection";
@@ -22,6 +25,9 @@ const Home = () => {
       <Consultation />
       <Comments />
       <News />
+      <Contact />
+      <Coworking />
+      <Footer />
     </>
   );
 };

@@ -1,0 +1,20 @@
+@import '../../style/_global'
+.contact_info_icons
+    display: flex
+    gap: 25px
+    position: relative
+    padding-top: 30px
+
+    svg
+        fill: $iconColor
+        transition: .3s
+        &:hover
+            fill: $colorTitle
+
+            &::after
+                content: ""
+                width: 100%
+                height: 1px
+                position: absolute
+                top: 0
+                background: rgba(255, 255, 255, 0.08)
