@@ -1,6 +1,7 @@
 import React from "react";
 import "./InfoSection.sass";
 import infoLeft from "../../../images/info_left.jpg";
+import { Link } from 'react-router-dom'
 
 const InfoSection = () => {
   return (
@@ -22,7 +23,7 @@ const InfoSection = () => {
               программировании и зарабатывать на этом, даже если вы новичок в
               разработке
             </p>
-            <button className="btn_course">КУРСЫ</button>
+            <Link to="/courses" className="btn_course">КУРСЫ</Link>
           </div>
         </div>
       </div>

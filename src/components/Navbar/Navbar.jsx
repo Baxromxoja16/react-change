@@ -1,20 +1,21 @@
 import React from "react";
 import "./Navbar.sass";
 import logo from "../../images/logo_icon.png";
+import { Link } from "react-router-dom"
 
-const Navbar = () => {
+const Navbar = ({ setActive }) => {
   return (
     <nav>
-      <a href="+998935613300" className="number">
+      <a href="tel:+998935613300" className="number">
         +998 93 561 33 00
       </a>
 
       <ul className="menu">
         <li className="menu_item">
-          <a href="#!">КУРСЫ</a>
+          <Link to="/courses">КУРСЫ</Link>
         </li>
         <li className="menu_item">
-          <a href="#!">ОТКРЫТЫЕ УРОКИ</a>
+          <Link to="/openlesson">ОТКРЫТЫЕ УРОКИ</Link>
         </li>
         <li className="menu_item">
           <a href="#!">
@@ -22,10 +23,10 @@ const Navbar = () => {
           </a>
         </li>
         <li className="menu_item">
-          <a href="#!">КОВОРКИНГ</a>
+          <Link to="/coworking">КОВОРКИНГ</Link>
         </li>
         <li className="menu_item">
-          <a href="#!">КОНТАКТЫ</a>
+          <Link to="contact">КОНТАКТЫ</Link>
         </li>
       </ul>
 
@@ -33,7 +34,7 @@ const Navbar = () => {
         <a href="#!" className="language">
           UZ
         </a>
-        <a className="signup" href="#!">
+        <a className="signup" href="#!" onClick={() => setActive(true)} >
           ЗАПИСАТЬСЯ
         </a>
       </div>
