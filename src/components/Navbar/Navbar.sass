@@ -1,6 +1,4 @@
 @import "../../style/_global"
-@import "../../style/_mixins"
-@import "../../style/_colors"
 
 nav
     display: flex
@@ -30,3 +28,27 @@ nav
             @include textNav()
         .language
             text-decoration: none
+
+// media query
+@media (max-width: 1199px)
+    nav 
+        .menu
+            gap: 30px
+        
+@media (max-width: 991px)   
+    nav 
+        .menu
+            display: none
+        .number
+            display: none
+        
+@media (max-width: 767px)   
+    nav 
+        padding-bottom: 0
+        .logo
+            img
+                width: 80px
+        .right_menu 
+            gap: 30px
+            .language
+                font-size: 14px

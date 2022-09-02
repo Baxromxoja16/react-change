@@ -2,10 +2,13 @@ import React from "react";
 import "./Navbar.sass";
 import logo from "../../images/logo_icon.png";
 import { Link } from "react-router-dom"
+import MediaLogo from "../MediaComponents/MediaLogo";
+import MediaBars from "../MediaComponents/MediaBars";
 
 const Navbar = ({ setActive }) => {
   return (
     <nav>
+      <MediaLogo />
       <a href="tel:+998935613300" className="number">
         +998 93 561 33 00
       </a>
@@ -34,11 +37,9 @@ const Navbar = ({ setActive }) => {
         <a href="#!" className="language">
           UZ
         </a>
-        <a className="signup" href="#!" onClick={() => setActive(true)} >
-          ЗАПИСАТЬСЯ
-        </a>
+        <MediaBars setActive={setActive} />
       </div>
-    </nav>
+    </nav >
   );
 };
 
