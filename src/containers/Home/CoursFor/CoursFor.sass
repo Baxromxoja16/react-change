@@ -33,6 +33,7 @@
     .course_right_date
         position: absolute
         right: 0
+        top: 0
         background: rgba(255, 255, 255, 0.2)
         width: 42%
         height: 100%
@@ -59,3 +60,38 @@
         .right_date
             @include blackText()
             color: $colorTitle
+
+//  media query
+@media (max-width: 1300px)
+
+@media (max-width: 1199px)
+    .CoursFor
+        background: $header-bg
+        padding: 40px 0
+        .course_left_info
+            h2
+                font-size: 18px
+            .course_info
+                h4, .course_info_text
+                    font-size: 16px
+                h4
+                    margin-bottom: 8px
+        
+
+@media (max-width: 991px)
+    .CoursFor 
+        .course_left_info
+            max-width: 391px
+            h2
+                margin-bottom: 25px
+        .course_right_date
+            padding: 0 40px
+            gap: 20px
+
+            h3
+                font-size: 46px
+
+                &::after
+                    margin-top: 20px
+
+@media (max-width: 767px)

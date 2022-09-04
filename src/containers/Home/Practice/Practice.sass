@@ -29,7 +29,6 @@
             .left_info_text
                 @include blackText()
                 &:last-child
-                    font-weight: 700
                     margin-top: 15px
 
         .practice_right_img
@@ -56,12 +55,45 @@
         gap: 20px
 
 @media (max-width: 1199px)
-    .practice 
-        .row 
+    .practice
+        .row
             .practice_left_info
                 width: 370px
-    
-        .row:last-child 
+
+        .row:last-child
             gap: 30px
             .practice_right_img span
                 left: 0
+
+@media (max-width: 991px)
+    .practice
+        padding-top: 40px
+        .row
+            &:first-child
+                margin-bottom: 40px
+            .practice_left_info, .practice_right_img
+                width: 340px
+                height: auto
+            .practice_right_img
+                span
+                    display: none
+            &:last-child
+                gap: 20px
+                .practice_left_info, .practice_right_img
+                    width: 340px
+                    height: auto
+                .practice_right_img
+                    span
+                        display: none
+
+@media (max-width: 767px)
+    .practice
+        padding-top: 40px
+        padding-bottom: 30px
+        .row
+            .practice_left_info, .practice_right_img
+                width: 100%
+            &:last-child
+                flex-direction: column-reverse
+                .practice_left_info, .practice_right_img
+                    width: 100%
