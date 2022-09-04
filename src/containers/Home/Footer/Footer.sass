@@ -36,3 +36,40 @@ footer
                 gap: 20px
             .footer_number
                 margin-right: 25px  
+                
+@media (max-width: 991px) 
+    footer 
+        padding-top: 40px
+        .footer_main
+            flex-wrap: wrap 
+            justify-content: space-between
+            
+            .footer_item
+                margin: 0
+                gap: 30px
+                li 
+                    a
+                        font-size: 12px
+            .footer_number
+                margin-right: 0
+                margin-left: 110px   
+            .contact_info_icons
+                margin: 40px auto 0 
+                &::after
+                    display: none                   
+
+
+@media (max-width: 767px) 
+    footer 
+        padding-bottom: 30px
+        .footer_main 
+            .footer_item
+                flex-wrap: wrap
+                width: 220px
+                justify-content: center
+                margin: auto
+            .footer_number
+                margin: 26px auto 0
+            .contact_info_icons
+                gap: 32px
+                margin-top: 26px

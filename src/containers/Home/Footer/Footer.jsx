@@ -1,18 +1,16 @@
 import React from 'react'
 import './Footer.sass'
 import Tel from '../../../components/icons/Tel'
-import logo from "../../../images/logo_icon.png";
 import Social from '../../../components/Social/Social';
 import { Link } from "react-router-dom"
+import MediaFooterLogo from '../../../components/MediaComponents/MediaFooterLogo';
 
 const Footer = () => {
     return (
         <footer>
             <div className="container">
                 <div className="footer_main">
-                    <div className="footer_logo">
-                        <img src={logo} alt="png" />
-                    </div>
+                    <MediaFooterLogo />
                     <ul className='footer_item'>
                         <li><Link to="/courses">КУРСЫ</Link></li>
                         <li><Link to="/openlesson">ОТКРЫТЫЕ УРОКИ</Link></li>

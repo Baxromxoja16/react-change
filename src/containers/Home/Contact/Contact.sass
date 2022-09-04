@@ -19,6 +19,7 @@
             text-align: left
             text-transform: none
             font-weight: 400
+            
         .contact_info_number
             display: flex
             align-items: center
@@ -68,4 +69,13 @@
         .contact_left_info h2,.contact_right_form h2
             font-size: 35px
         
-            
+@media (max-width: 991px)
+    .contacts 
+        .contact_left_info h2, .contact_right_form h2
+            font-size: 18px
+            font-weight: 500
+
+@media (max-width: 767px)
+    .contacts 
+        .contact_left_info,.contact_right_form
+            width: 100%

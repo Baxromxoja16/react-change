@@ -5,16 +5,16 @@
     position: relative
     padding-top: 30px
 
+    &::after
+        content: ""
+        width: 100%
+        height: 1px
+        position: absolute
+        top: 0
+        background: rgba(255, 255, 255, 0.08)
     svg
         fill: $iconColor
         transition: .3s
         &:hover
             fill: $colorTitle
 
-            &::after
-                content: ""
-                width: 100%
-                height: 1px
-                position: absolute
-                top: 0
-                background: rgba(255, 255, 255, 0.08)
