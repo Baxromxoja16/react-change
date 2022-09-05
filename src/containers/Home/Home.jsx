@@ -5,7 +5,7 @@ import Consultation from "./Consultation/Consultation";
 import Contact from "./Contact/Contact";
 import CoursFor from "./CoursFor/CoursFor";
 import Coworking from "./Coworking/Coworking";
-import Footer from "./Footer/Footer";
+import Footer from "../../components/Footer/Footer";
 import Header from "./Header/Header";
 import "./Home.sass";
 import InfoSection from "./InfoSection/InfoSection";

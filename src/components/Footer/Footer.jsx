@@ -1,9 +1,9 @@
 import React from 'react'
 import './Footer.sass'
-import Tel from '../../../components/icons/Tel'
-import Social from '../../../components/Social/Social';
+import Tel from '../icons/Tel'
+import Social from '../Social/Social';
 import { Link } from "react-router-dom"
-import MediaFooterLogo from '../../../components/MediaComponents/MediaFooterLogo';
+import MediaFooterLogo from '../MediaComponents/MediaFooterLogo';
 
 const Footer = () => {
     return (

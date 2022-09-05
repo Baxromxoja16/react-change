@@ -1,0 +1,50 @@
+@import "../../../style/_global"
+
+.course
+    padding: 40px 0
+    .row
+        gap: 148px
+        align-items: center
+        justify-content: space-between
+        margin-bottom: 90px
+        .course_left_info
+            width: 557px
+            h2
+                @include heading2()
+                font-size: 24px
+                margin-bottom: 24px
+
+            .course_text
+                @include blackText()
+                margin-bottom: 35px
+
+            .course_buttons
+                display: flex
+                align-items: center
+                gap: 50px
+                .about_course
+                    display: flex
+                    justify-content: center
+                    align-items: center
+                    width: 173px
+                    height: 50px
+                    border: 1px solid $btnWhite-bg
+                    @include textNav()
+                    font-size: 14px
+                    color: $btnWhite-bg
+                    text-decoration: none
+
+                .line
+                    width: 2px
+                    height: 16px
+                    background: $btnWhite-bg
+
+                span
+                    @include textWhite()
+                    color: $colorSlider
+        .course_right_img
+            max-width: 440px
+            max-height: 297px
+            img
+                width: 100%
+                height: 100%
