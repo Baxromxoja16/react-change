@@ -23,7 +23,7 @@ const Navbar = ({ setActive }) => {
               <Link to="/openlesson">ОТКРЫТЫЕ УРОКИ</Link>
             </li>
             <li className="menu_item">
-              <a href="#!">
+              <a href="/">
                 <img src={logo} alt="png" />
               </a>
             </li>

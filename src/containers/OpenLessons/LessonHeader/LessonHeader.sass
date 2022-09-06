@@ -1,0 +1,29 @@
+@import "../../../style/_global"
+
+header.lesson_header
+    background: url("../../../images/lesson_bg.jpg") no-repeat
+    background-size: cover
+    padding: 82px 0
+
+    .lesson_hero
+        width: 675px
+        margin: auto
+
+        h1
+            @include title()
+            font-size: 46px
+            &::after
+                content: ""
+                display: block
+                background: $colorTitle
+                width: 182px
+                height: 1px
+                margin: auto
+                margin-top: 30px
+        
+        .lesson_head
+            @include textWhite()
+            text-align: center
+            margin-top: 30px
+            
+                

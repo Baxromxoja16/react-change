@@ -9,7 +9,7 @@ const Header = () => {
   const [popUp, setPopUp] = useState(false)
 
   return (
-    <header>
+    <header className="home_header">
       {
         popUp ? <ModalReq active={popUp} setActive={setPopUp} /> : null
       }

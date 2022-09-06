@@ -1,0 +1,55 @@
+@import '../../style/_global'
+
+.cart
+    width: 440px
+    height: 290px
+    background: url('../../images/cart_img.jpg')
+    padding: 20px
+    position: relative
+    display: flex
+    flex-direction: column
+    justify-content: flex-end
+    gap: 13px
+    overflow: hidden
+
+    &::after
+        content: ""
+        display: block
+        width: 100%
+        height: 1px
+        background: rgba(255, 255, 255, 0.4)
+        position: absolute
+        bottom: 93px
+        left: 0
+    &:hover
+        .cart_hover
+            transform: translateY(0%)
+
+    h4
+        @include textWhite()
+        font-weight: 700
+    .date
+        @include textWhite()
+    .cart_hover
+        transform: translateY(-120%)
+        background: rgba(36, 36, 36, 0.83)
+        width: 100%
+        height: 100%
+        position: absolute
+        top: 0
+        left: 0
+        z-index: 2
+        padding: 78px 20px
+        display: flex
+        flex-direction: column
+        transition: .5s
+        gap: 13px
+
+    .btn_cart_hover
+        margin-top: 18px
+        @include btn_white()
+        @include blackText()
+        font-size: 14px
+        font-weight: 500
+        text-transform: uppercase
+        cursor: pointer
