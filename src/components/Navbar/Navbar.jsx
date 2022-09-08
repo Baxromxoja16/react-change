@@ -31,7 +31,7 @@ const Navbar = ({ setActive }) => {
               <Link to="/coworking">КОВОРКИНГ</Link>
             </li>
             <li className="menu_item">
-              <Link to="contact">КОНТАКТЫ</Link>
+              <Link to="/contact">КОНТАКТЫ</Link>
             </li>
           </ul>
 
