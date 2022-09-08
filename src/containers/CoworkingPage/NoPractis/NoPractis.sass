@@ -9,6 +9,8 @@
             width: 657px
             height: 383px
             position: relative
+            img
+                width: 100%
             .back
                 position: absolute
                 top: -20px
@@ -49,3 +51,62 @@
                 display: flex
                 gap: 10px
                 @include blackText()
+
+@media (max-width: 1199px)
+    .no_practis
+        .row
+            .practis_left_img
+                height: auto
+                width: 500px
+            .practis_right_info
+                width: 365px
+                h2
+                    font-size: 32px
+        .row_bottom
+            width: 850px
+            .about_coworking
+                justify-content: center
+                .about_item
+                    width: 365px
+
+@media (max-width: 991px)
+    .no_practis
+        padding: 40px 30px
+        .row
+            flex-direction: row-reverse
+            .practis_right_info
+                width: 395px
+                h2
+                    font-size: 18px
+                .practis_info_text
+                    font-size: 16px
+
+            .practis_left_img
+                width: 266.29px
+                height: 155.84px
+                .back
+                    left: -7px
+                    top: -7px
+
+        .row_bottom
+            width: 100%
+            h3
+                font-size: 16px
+            .about_coworking
+                justify-content: flex-start
+                .about_item
+                    width: 330px
+
+@media (max-width: 767px)
+    .no_practis
+        padding: 30px 10px
+        .row
+            flex-direction: column-reverse
+            .practis_right_info
+                width: 100%
+                .practis_info_text
+                    margin-bottom: 30px
+                .practis_info_btn
+                    font-size: 14px
+            .practis_left_img
+                width: 100%

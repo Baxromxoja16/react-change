@@ -41,7 +41,7 @@ const NoPractis = () => {
           <h3>Преимущества нашего коворкинга:</h3>
           <ul className="about_coworking">
             {data.map((x, i) => (
-              <li className="about_item">
+              <li className="about_item" key={i}>
                 <span><Icon /></span> {x.text}
               </li>
             ))}
