@@ -14,7 +14,6 @@ const Navbar = ({ setActive }) => {
           <a href="tel:+998935613300" className="number">
             +998 93 561 33 00
           </a>
-
           <ul className="menu">
             <li className="menu_item">
               <Link to="/courses">КУРСЫ</Link>
@@ -34,7 +33,6 @@ const Navbar = ({ setActive }) => {
               <Link to="/contact">КОНТАКТЫ</Link>
             </li>
           </ul>
-
           <div className="right_menu">
             <a href="#!" className="language">
               UZ
