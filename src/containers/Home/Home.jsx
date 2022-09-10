@@ -1,6 +1,5 @@
 import React from "react";
 import Along from "./Along/Along";
-import Comments from "./Comments/Comments";
 import Consultation from "./Consultation/Consultation";
 import Contact from "./Contact/Contact";
 import CoursFor from "./CoursFor/CoursFor";

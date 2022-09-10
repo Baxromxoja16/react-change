@@ -35,7 +35,7 @@ const Course = () => {
                     <h2>{x.title}</h2>
                     <p className='course_text'>{x.text}</p>
                     <div className="course_buttons">
-                        <a href='#!' className='about_course'>о курсе</a>
+                        <a href='/aboutcourse' className='about_course'>о курсе</a>
                         <div className='line'></div>
                         <span>Количество мест: 14</span>
                     </div>

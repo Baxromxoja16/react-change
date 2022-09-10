@@ -5,6 +5,7 @@ import CoursesPage from "./containers/CoursesPage/CoursesPage";
 import CoworkingPage from "./containers/CoworkingPage/CoworkingPage";
 import OpenLessons from "./containers/OpenLessons/OpenLessons";
 import ContactPage from "./containers/ContactPage/ContactPage";
+import AboutCourse from "./containers/AboutCourse/AboutCourse";
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
         <Route path="/courses" element={< CoursesPage />} />
         <Route path="/coworking" element={<CoworkingPage />} />
         <Route path="/openlesson" element={<OpenLessons />} />
+        <Route path="/aboutcourse" element={<AboutCourse />} />
       </Routes>
     </>
   );
