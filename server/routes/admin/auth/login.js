@@ -1,8 +1,7 @@
 const express = require('express');
 const router = express.Router();
+const { loginPost } = require('../../../controllers/admin/auth/login')
 
-router.get('/', (req, res) => {
-    res.json({ ok: true, message: 'This is admin dashboard!' })
-});
+router.post('/', loginPost);
 
 module.exports = router
