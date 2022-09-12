@@ -1,0 +1,29 @@
+@import "../../style/_global"
+
+.menu_overlay
+    width: 100%
+    height: 100%
+    position: fixed
+    top: 0
+    left: 0
+    background: $header-bg
+    z-index: 1
+
+.menu_media
+    padding: 50px
+    width: 70%
+    position: absolute
+    top: 50%
+    left: 50%
+    transform: translate(-50%, -50%)
+    z-index: 2
+    width: 300px
+
+    ul
+        display: flex
+        align-items: center
+        flex-direction: column
+        gap: 20px
+        li
+            a
+                @include textNav()

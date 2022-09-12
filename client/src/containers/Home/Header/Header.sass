@@ -1,6 +1,7 @@
 @import '../../../style/_global'
 
 header.home_header
+    position: relative
     background: $header-bg
     padding-bottom: 137px
 
@@ -37,31 +38,30 @@ header.home_header
 
 @media (max-width: 991px)
     header
-        padding-bottom: 169px   
+        padding-bottom: 169px
         .hero
-            margin-top: 114px   
+            margin-top: 114px
             .title
-                font-size: 36px 
+                font-size: 36px
             .title_text
                 font-size: 18px
                 margin-top: 31px
-            
-            .buttons 
-                .btn_about_course,.btn_singin 
-                    font-size: 14px
 
+            .buttons
+                .btn_about_course,.btn_singin
+                    font-size: 14px
 
 @media (max-width: 767px)
     header
-        padding-bottom: 109px   
+        padding-bottom: 109px
         .hero
-            width: 300px
-            margin-top: 66px
+            width: 300px !important
+            margin-top: 66px 
             .title
-                font-size: 22px
+                font-size: 22px !important
             .title_text
-                font-size: 16px
-                text-transform: none
+                font-size: 16px !important
+                text-transform: none !important
             .buttons
                 gap: 10px
                 .btn_about_course,.btn_singin

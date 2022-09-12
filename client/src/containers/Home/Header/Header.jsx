@@ -1,32 +1,29 @@
-import React, { useState } from "react";
-import ModalReq from "../../../components/ModalReq/ModalReq";
+import React from "react";
 import Navbar from "../../../components/Navbar/Navbar";
 import "./Header.sass";
-import { Link } from "react-router-dom"
+import { Link } from "react-router-dom";
 
 const Header = () => {
-
-  const [popUp, setPopUp] = useState(false)
-
   return (
     <header className="home_header">
-      {
-        popUp ? <ModalReq active={popUp} setActive={setPopUp} /> : null
-      }
       <div className="container">
-        <Navbar setActive={setPopUp} />
+        <Navbar />
         <div className="hero">
           <h1 className="title">Освойте профессию с нуля и зарабатывайте</h1>
           <p className="title_text">
             Расширенный курс по веб - программированию
           </p>
           <div className="buttons">
-            <Link to="/courses" className="btn_about_course">О курсе</Link>
-            <button className="btn_singin" onClick={() => setPopUp(true)}>Записаться</button>
+            <Link to="/courses" className="btn_about_course">
+              О курсе
+            </Link>
+            <button className="btn_singin" >
+              Записаться
+            </button>
           </div>
         </div>
       </div>
-    </header> 
+    </header>
   );
 };
 
