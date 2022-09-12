@@ -1,6 +1,7 @@
 const multer = require('multer');
 const moment = require('moment');
 const path = require('path');
+const shell = require('shelljs');
 
 const allowedType = ['image/jpg', 'image/png', 'image/jpeg'];
 
@@ -12,14 +13,10 @@ function fileFilter(req, file, cb) {
     };
 };
 
-module.exports = async (dest) => {
-    const filePath = path.join(__dirname, '..', '..', 'public', 'uploads', dest);
-    // try {
-    //     const dist = await mkdirp(filePath);
-    // } catch (error) {
-
-    // }
+module.exports = (dest) => {
+    const filePath = path.join(__dirname, '..', 'public', 'uploads', dest);
     const random = () => Math.floor(Math.random() * 99999);
+    shell.mkdir('-p', filePath);
 
     const storage = multer.diskStorage({
         destination: function (req, file, cb) {

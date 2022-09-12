@@ -20,4 +20,4 @@ techsSchema.post('save', (error, doc, next) => {
     next();
 });
 
-module.exports = model('tech', techsSchema);
+module.exports = model('techs', techsSchema);

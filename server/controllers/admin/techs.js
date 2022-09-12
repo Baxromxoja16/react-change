@@ -7,6 +7,7 @@ module.exports.getAll = async (req, res) => {
 
 module.exports.addNew = async (req, res) => {
     try {
+        if (req.file) req.body.image = '/uploads/techs/' + req.file.filename;
         await Techs.create(req.body);
         res.json({ ok: true, message: 'Item is successfully created!' });
     } catch (message) {
@@ -16,18 +17,20 @@ module.exports.addNew = async (req, res) => {
 
 module.exports.updateOne = async (req, res) => {
     try {
-        await Techs.findByIdAndUpdate(req.params.id, req.body);
-        res.json({ ok: true, message: 'Item is successfully created!' });
+        const updated = await Techs.findByIdAndUpdate(req.params.id, req.body);
+        if (updated) res.json({ ok: true, message: 'Item is successfully updated!' });
+        else throw '';
     } catch (message) {
-        res.status(400).json({ ok: false, message });
-    };
+        res.status(400).json({ ok: false, message: 'Item is not found!' });
+    }
 };
 
 module.exports.deleteOne = async (req, res) => {
     try {
-        await Techs.findByIdAndDelete(req.params.id);
-        res.json({ ok: true, message: 'Item is successfully deleted!' });
+        const deleted = await Techs.findByIdAndDelete(req.params.id);
+        if (deleted) res.json({ ok: true, message: 'Item is successfully deleted!' });
+        else throw '';
     } catch (message) {
-        res.status(400).json({ ok: false, message });
-    };
+        res.status(400).json({ ok: false, message: 'Item is not found!' });
+    }
 };
