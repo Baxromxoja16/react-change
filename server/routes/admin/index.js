@@ -1,21 +1,19 @@
 const express = require('express');
 const router = express.Router();
-const { loginPost } = require('../../controllers/admin/auth/login');
-const { registerPost } = require('../../controllers/admin/auth/register');
+const authMiddleware = require('../../middlewares/admin/auth');
 
-// login post
-router.post('/login', loginPost);
 
-// register post
-router.post('/register', registerPost);
+// Authentication: /api/admin/auth
+router.use('/auth', require('./auth'));
 
-// get status
-router.get('/status', registerPost);
+// Authorization protect router: /api/admin/*
+router.use(authMiddleware);
 
-router.get('/', (req, res) => {
-    res.json({ ok: true, message: 'This is admin dashboard!' })
+// Techs crud
+router.use('/techs', require('./techs'));
+
+router.use((req, res) => {
+    res.status(404).json({ ok: false, message: '404 Error: Path is not defined!' });
 });
-
-
 
 module.exports = router

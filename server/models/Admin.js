@@ -9,12 +9,14 @@ const adminSchema = new Schema({
     username: {
         type: String,
         required: [true, 'Please enter a username!'],
-        minlength: [4, 'Enter a username of at least 4 letters']
+        minlength: [4, 'Enter a username of at least 4 letters'],
+        unique: true
     },
     phone: {
         type: String,
         required: [true, 'Please enter a phone name!'],
-        minlength: [6, 'Enter a phone of at least 6 letters']
+        minlength: [9, 'Enter a phone of at least 9 letters'],
+        unique: true
     },
     password: {
         type: String,
@@ -22,7 +24,7 @@ const adminSchema = new Schema({
     }
 });
 
-userSchema.post('save', (error, doc, next) => {
+adminSchema.post('save', (error, doc, next) => {
     if (error) {
         if (error.code == 11000) {
             const key = Object.keys(error.keyValue)[0];

@@ -18,8 +18,8 @@ const client = require('./routes/client/index');
 const admin = require('./routes/admin/index');
 
 // routing
-app.use('/', client);
-app.use('/admin', admin);
+app.use('/api', client);
+app.use('/api/admin', admin);
 
 // connection to database
 require('./helper/database')();
