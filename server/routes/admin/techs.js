@@ -7,7 +7,7 @@ const upload = require('../../middlewares/upload');
 router.get('/', techs.getAll);
 
 // Add one tech: /api/admin/techs/add
-router.post('/add', upload('techs').single('image'), techs.addNew);
+router.post('/add', upload(['techs']).single('image'), techs.addNew);
 
 // Update one tech: /api/admin/techs/update/:id
 router.post('/update/:id', techs.updateOne);

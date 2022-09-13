@@ -14,7 +14,7 @@ function fileFilter(req, file, cb) {
 };
 
 module.exports = (dest) => {
-    const filePath = path.join(__dirname, '..', 'public', 'uploads', dest);
+    const filePath = path.join(__dirname, '..', 'public', 'uploads', ...dest);
     const random = () => Math.floor(Math.random() * 99999);
     shell.mkdir('-p', filePath);
 

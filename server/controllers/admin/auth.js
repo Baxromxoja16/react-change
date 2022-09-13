@@ -12,19 +12,18 @@ module.exports.loginPost = async (req, res) => {
             const token = jwt.sign({ user }, secret, { expiresIn: '25min', algorithm: 'HS512' });
             res.json({ ok: true, message: 'You have successfully logged in!', token });
         } else {
-            res.status(400).json({ ok: false, message: 'Email or password is incorrect' });
+            res.status(400).json({ ok: false, message: 'Username or password is incorrect' });
         };
     } catch (error) {
-        console.log(error);
-        res.status(400).json({ ok: false, message: 'Email or password is incorrect' });
-    }
+        res.status(400).json({ ok: false, message: 'Username or password is incorrect' });
+    };
 };
 
 module.exports.registerPost = async (req, res) => {
     try {
         await checkAdmin();
         const message = await registerNewUser(req.body);
-        res.json({ ok: true, message })
+        res.json({ ok: true, message });
     } catch (message) {
         res.status(400).json({ ok: false, message });
     };

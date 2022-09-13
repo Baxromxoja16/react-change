@@ -7,7 +7,7 @@ const upload = require("../../middlewares/upload");
 router.get("/", lessons.getAll);
 
 // Add one lesson: /api/admin/lessons/add
-router.post("/add", upload("lessons").single("image"), lessons.addNew);
+router.post("/add", upload(["lessons"]).single("image"), lessons.addNew);
 
 // Update one lesson: /api/admin/lessons/update/:id
 router.post("/update/:id", lessons.updateOne);

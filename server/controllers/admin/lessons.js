@@ -1,18 +1,17 @@
-const Lesson = require("../../models/Techs");
+const Lesson = require("../../models/Lesson");
 
 module.exports.getAll = async (req, res) => {
   const lessons = await Lesson.find();
-  res.json({ ok: true, techs });
+  res.json({ ok: true, lessons });
 };
 
 module.exports.addNew = async (req, res) => {
   try {
-    if (req.file) req.body.image = "/uploads/lessons/" + req.file.filename;
     await Lesson.create(req.body);
     res.json({ ok: true, message: "Lesson is successfully created!" });
   } catch (message) {
     res.status(400).json({ ok: false, message });
-  }
+  };
 };
 
 module.exports.updateOne = async (req, res) => {

@@ -1,4 +1,5 @@
 const Tech = require("../../models/Techs");
+const deleteFile = require('../../utils/deleteFile');
 
 module.exports.getAll = async (req, res) => {
   const techs = await Tech.find();
@@ -28,10 +29,11 @@ module.exports.updateOne = async (req, res) => {
 
 module.exports.deleteOne = async (req, res) => {
   try {
-    const deleted = await Tech.findByIdAndDelete(req.params.id);
-    if (deleted)
-      res.json({ ok: true, message: "Item is successfully deleted!" });
-    else throw "";
+    const deleted = JSON.parse(JSON.stringify(await Tech.findByIdAndDelete(req.params.id)));
+    if (deleted) {
+      deleteFile([deleted.image]);
+      return res.json({ ok: true, message: "Item is successfully deleted!" });
+    } else throw "";
   } catch (message) {
     res.status(400).json({ ok: false, message: "Item is not found!" });
   };
