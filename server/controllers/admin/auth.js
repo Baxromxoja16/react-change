@@ -9,7 +9,7 @@ module.exports.loginPost = async (req, res) => {
         const password = await bcrypt.compare(req.body.password, user.password);
         if (password) {
             delete user.password;
-            const token = jwt.sign({ user }, secret, { expiresIn: '10min', algorithm: 'HS512' });
+            const token = jwt.sign({ user }, secret, { expiresIn: '25min', algorithm: 'HS512' });
             res.json({ ok: true, message: 'You have successfully logged in!', token });
         } else {
             res.status(400).json({ ok: false, message: 'Email or password is incorrect' });
