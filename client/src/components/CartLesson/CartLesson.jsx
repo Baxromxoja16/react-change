@@ -7,7 +7,7 @@ const CartLesson = ({ courseName, courseDate }) => {
       <div className="cart_hover">
         <h4>{courseName}</h4>
         <p className="date">{courseDate}</p>
-        <button className="btn_cart_hover">Записаться</button>
+        <a href="tel:+998935613300" className="btn_cart_hover">+998 93 561 33 00</a>
       </div>
       <h4>{courseName}</h4>
       <p className="date">{courseDate}</p>

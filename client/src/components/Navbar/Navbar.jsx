@@ -7,13 +7,12 @@ import MediaBars from "../MediaComponents/MediaBars";
 import ModalReq from "../ModalReq/ModalReq";
 import MenuMedia from "../MenuMedia/MenuMedia";
 
-const Navbar = () => {
-  const [popUp, setPopUp] = useState(false);
+const Navbar = ({ setActive, active }) => {
   const [menuMedia, setMenuMedia] = useState(false);
 
   return (
     <>
-      {popUp ? <ModalReq active={popUp} setActive={setPopUp} /> : null}
+      {active ? <ModalReq active={active} setActive={setActive} /> : null}
       {menuMedia ? <MenuMedia setMenuActive={setMenuMedia} /> : null}
       <div className="nav">
         <div className="container">
@@ -45,7 +44,7 @@ const Navbar = () => {
               <a href="#!" className="language">
                 UZ
               </a>
-              <MediaBars setActive={setPopUp} setMenuActive={setMenuMedia} />
+              <MediaBars setActive={setActive} setMenuActive={setMenuMedia} />
             </div>
           </nav>
         </div>
