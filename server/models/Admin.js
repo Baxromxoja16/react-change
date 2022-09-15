@@ -14,7 +14,7 @@ const adminSchema = new Schema({
     },
     phone: {
         type: String,
-        required: [true, 'Please enter a phone name!'],
+        required: [true, 'Please enter a phone number!'],
         minlength: [9, 'Enter a phone of at least 9 letters'],
         unique: true
     },

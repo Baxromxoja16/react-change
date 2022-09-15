@@ -14,6 +14,9 @@ router.use("/techs", require("./techs"));
 // Lessons crud
 router.use("/lessons", require("./lessons"));
 
+// Courses crud
+router.use("/courses", require("./courses"));
+
 router.use((req, res) => {
   res
     .status(404)
