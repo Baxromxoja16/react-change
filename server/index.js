@@ -9,6 +9,9 @@ require('dotenv').config();
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
+// static files
+app.use(express.static('./public/'));
+
 // cors for frontend
 const fronts = process.env.FRONT_URL.split(' ');
 app.use(cors({ credentials: true, origin: fronts }));
@@ -16,10 +19,12 @@ app.use(cors({ credentials: true, origin: fronts }));
 // importing routes
 const client = require('./routes/client/index');
 const admin = require('./routes/admin/index');
+const error = require('./middlewares/404');
 
 // routing
 app.use('/api', client);
 app.use('/api/admin', admin);
+app.use(error);
 
 // connection to database
 require('./helper/database')();

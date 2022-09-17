@@ -17,10 +17,7 @@ router.use("/lessons", require("./lessons"));
 // Courses crud
 router.use("/courses", require("./courses"));
 
-router.use((req, res) => {
-  res
-    .status(404)
-    .json({ ok: false, message: "404 Error: Path is not defined!" });
-});
+// Contact
+router.use('/contact', require('./contact'));
 
 module.exports = router;

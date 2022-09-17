@@ -1,4 +1,5 @@
 const { model, Schema } = require("mongoose");
+const errorHandler = require("../utils/mongooseError");
 
 const lessonSchema = new Schema({
   title: {
@@ -11,13 +12,6 @@ const lessonSchema = new Schema({
   },
 });
 
-lessonSchema.post('save', (error, doc, next) => {
-  if (error && error.errors) {
-      const errorKeys = Object.keys(error.errors);
-      const message = error.errors[errorKeys[errorKeys.length - 1]].message;
-      throw message
-  }
-  next();
-});
+lessonSchema.post('save', errorHandler);
 
 module.exports = model("lessons", lessonSchema);

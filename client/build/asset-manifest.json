@@ -1,0 +1,28 @@
+{
+  "files": {
+    "main.css": "/static/css/main.8e99a918.css",
+    "main.js": "/static/js/main.ed1e0e1b.js",
+    "static/media/kurs.jpg": "/static/media/kurs.6f9719972eb49b1afa35.jpg",
+    "static/media/cowo_bg.jpg": "/static/media/cowo_bg.87877eae9bef0abf7d40.jpg",
+    "static/media/lesson_bg.jpg": "/static/media/lesson_bg.53d298930d79d09001a2.jpg",
+    "static/media/along_img.jpg": "/static/media/along_img.042f045044fa8bc86989.jpg",
+    "static/media/top_bg.png": "/static/media/top_bg.8515bc35bbd25186a20a.png",
+    "static/media/info_left.jpg": "/static/media/info_left.e9e390fcf8ae5ed126b7.jpg",
+    "static/media/bottom_bg.png": "/static/media/bottom_bg.94c93d5f45818147dbb1.png",
+    "static/media/new_big.png": "/static/media/new_big.e5cf730b86343571956c.png",
+    "static/media/coworking.jpg": "/static/media/coworking.55aa5e9e3e20ae709b27.jpg",
+    "static/media/practis_img.jpg": "/static/media/practis_img.64acc2768b97cc1aa1bd.jpg",
+    "static/media/news_small.png": "/static/media/news_small.1726f14b385c1c6d879d.png",
+    "static/media/new_smal.png": "/static/media/new_smal.1d2d0cd0bf9d88cbd3dd.png",
+    "static/media/cart_img.jpg": "/static/media/cart_img.cffb136d51fac805d2ee.jpg",
+    "static/media/course.png": "/static/media/course.bc7e75ffd854e815106c.png",
+    "static/media/practis_back.jpg": "/static/media/practis_back.6dd1eabf2f4a108a1c81.jpg",
+    "index.html": "/index.html",
+    "main.8e99a918.css.map": "/static/css/main.8e99a918.css.map",
+    "main.ed1e0e1b.js.map": "/static/js/main.ed1e0e1b.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.8e99a918.css",
+    "static/js/main.ed1e0e1b.js"
+  ]
+}
