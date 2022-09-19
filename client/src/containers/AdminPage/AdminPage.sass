@@ -1,0 +1,26 @@
+@import "../../style/_global"
+
+.admin_page
+    display: flex
+    width: 100%
+    aside
+        width: 15%
+        height: 90vh
+        background: $btnWhite-bg
+
+    ul
+        li
+            a
+                @include textNav()
+                padding: 10px
+                display: block
+                border: 1px solid
+                padding: 30px
+                &:focus
+                    background: #353535
+
+    .admin_main
+        width: 85%
+        height: 90vh
+        background: #ccc
+        padding: 40px
